@@ -22,6 +22,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		
@@ -53,6 +54,38 @@
      background-position: center;
     background-repeat: no-repeat;
     background-size: cover;}
+			/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('img/slider/affinity.jpeg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url('img/slider/banner.jpg');
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("img/slider/cinelli.jpeg");
+    min-height: 400px;
+}
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+			
 		</style>
     </head>
 	
@@ -91,8 +124,7 @@
                     <ul id="nav" class="nav navbar-nav">
                         <li><a href="#body">Home</a></li>
                         <li><a href="#service">About Us</a></li>
-                        <li><a href="#portfolio">products</a></li>
-                        <li><a href="#testimonials">Testimonial</a></li>
+						<li><a href="#portfolio">products</a></li>
                         <li></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -184,9 +216,9 @@
         ==================================== -->
 			
 			<!-- about section -->
-			<section id="about" >
-				<div class="container">
-					<div class="row">
+			<section id="about" class="" >
+				<div class="container ">
+					<div class="row ">
 <div class="col-md-7 col-md-offset-1 wow animated fadeInRight col-lg-offset-0 col-lg-12">
 			<div class="welcome-block">
 								<h3>Welcome To Our Site</h3>								
@@ -262,6 +294,16 @@
 			</section>
 			<!-- end Service section -->
 			
+			<!--parallax image-->
+			<div class="bgimg-2 w3-display-container w3-opacity-min">
+  				<div class="w3-display-middle">
+    				<span class="w3-xxlarge w3-text-white w3-wide">PRODUCTS</span>
+  				</div>
+			</div>
+			
+			
+			
+			
 			<!-- portfolio section -->
 			<section id="portfolio">
 				<div class="container">
@@ -270,22 +312,22 @@
 						<div class="sec-title text-center wow animated fadeInDown">
 							<h2>Products</h2>
 							<div class="w3-container" id="menu">
-		    					<div class="w3-content" style="max-width:1170px">
-							    <div class="w3-row w3-center w3-card w3-padding ">
+		    					<div class="w3-content" style="max-width:1170px;">
+							    <div class="w3-row w3-center w3-card w3-padding "  style="color:#4d2600;">
 									<a href="javascript:void(0)" onclick="openMenu(event, 'atta');" id="myLink">
-							      		<div class="w3-col tablink" style="width: 20%"><strong>Cattle feed Atta/ Durum wheat Bran </strong> </div>
+							      		<div class="w3-col tablink" style="width: 20%;  color:#4d2600;"><strong>Cattle feed Atta/ Durum wheat Bran </strong> </div>
 									</a>
 									<a href="javascript:void(0)" onclick="openMenu(event, 'rava');" id="myLink">
-							        	<div class="w3-col tablink" style="width: 20%"><strong>Semolina / Chiroti rawa</strong></div>
+							        	<div class="w3-col tablink" style="width: 20%;  color:#4d2600;"><strong>Semolina / Chiroti rawa</strong></div>
 							        </a>
 									<a href="javascript:void(0)" onclick="openMenu(event, 'dalia');" id="myLink">
-										<div class="w3-col tablink" style="width: 20%"><strong>Special Kesari Dalia / small sized Durum broken wheat</strong></div>
+										<div class="w3-col tablink" style="width: 20%;  color:#4d2600;"><strong>Special Kesari Dalia / small sized Durum broken wheat</strong></div>
 							        </a>
 									<a href="javascript:void(0)" onclick="openMenu(event, 'sooji');" id="myLink">
-										<div class="w3-col tablink" style="width: 20%"><strong>Special Kesari Rava / Sooji</strong></div>
+										<div class="w3-col tablink" style="width: 20%;  color:#4d2600;"><strong>Special Kesari Rava / Sooji</strong></div>
 							        </a>
 									<a href="javascript:void(0)" onclick="openMenu(event, 'lapsi');" id="myLink">
-										<div class="w3-col tablink" style="width: 20%"><strong>Special Lapsi No.3 / the large size broken wheat durum</strong></div>
+										<div class="w3-col tablink" style="width: 20%;  color:#4d2600;"><strong>Special Lapsi No.3 / the large size broken wheat durum</strong></div>
 							        </a>
 								</div>
 							    <div id="atta" class="w3-container menu w3-padding-48 w3-card">
@@ -326,6 +368,7 @@
 						      </div>
 						  </div>
 						</div>
+						
 						
 <!--
 						<ul class="project-wrapper wow animated fadeInUp">
@@ -382,6 +425,7 @@
 						
 						
 						 <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+
   <div class="w3-row-padding w3-center portfolio-itemproject-wrapper wow animated fadeInUp ">
     <div class="w3-col m3">
       <img src="img/portfolio/item.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" >
@@ -476,63 +520,16 @@
 			<!-- Price section -->			<!-- end Price section -->
 			
 			<!-- Social section -->
-			<section id="testimonials" class="parallax w3-center">
-				<div class="overlay">
-					<div class="container">
-						<div class="row w3-center">
-						
-							<div class="sec-title text-center white wow animated fadeInDown">
-								<h2>What people say</h2>
-							</div>
-							
-							<div id="testimonial" class=" wow animated fadeInUp">
-								<div class="testimonial-item text-center">
-									<img src="img/member-1.jpg" alt="Our Clients">
-									<div class="clearfix">
-										<span>Katty Flower</span>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-									</div>
-								</div>
-								<div class="testimonial-item text-center">
-									<img src="img/member-1.jpg" alt="Our Clients">
-									<div class="clearfix">
-										<span>Katty Flower</span>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-									</div>
-								</div>
-								<div class="testimonial-item text-center">
-									<img src="img/member-1.jpg" alt="Our Clients">
-									<div class="clearfix">
-										<span>Katty Flower</span>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-									</div>
-								</div>
-							</div>
-						
-						</div>
-					</div>
-				</div>
-				<!--
-				<div class="overlay">
-					<div class="container">
-						<div class="row">
-						
-							<div class="sec-title text-center white wow animated fadeInDown">
-								<h2>FOLLOW US</h2>
-								<p>Beautifully simple follow buttons to help you get followers on</p>
-							</div>
-							
-							<ul class="social-button">
-								<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-2x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>							
-							</ul>
-							
-						</div>
-					</div>
-				</div>-->
-			</section>
+			
 			<!-- end Social section -->
+			
+			
+			<!--parallax-->
+			<div class="bgimg-3 w3-display-container w3-opacity-min">
+  				<div class="w3-display-middle">
+						<span class="w3-xxlarge w3-text-white w3-wide">Contact</span>
+  				</div>
+			</div>
 			
 			<!-- Contact section -->
 			<section id="contact" >
@@ -557,27 +554,24 @@
 				</div>
 			</section>
 			<!-- end Contact section -->
-			
-			<section id="google-map">
-				<div id="map-canvas" class="wow animated fadeInUp w3-center" style="width:100%; height:450px;">
-				
-				</div>
-			</section>
-			<div id="googleMap" style="width:100%;height:400px;" class="wow animated fadeInUp w3-center"></div>
-		</main>
+		
+	
+			<div class="wow animated fadeInUp w3-center">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d117736.21521685972!2d75.83277347608785!3d22.755851991246235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd0bbd2503ed%3A0xd9b1e919c86659d6!2sBanwari+agro+industries!5e0!3m2!1sen!2sin!4v1516117006001" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
 		
 		
 				
-				<footer class="w3-center w3-padding-64 w3-opacity w3-hover-opacity-off w3-text-white foot" > 
-<a href="#body" title="To Top"><i class="fa fa-angle-double-up w3-xlarge w3-center "></i>
-<p class="w3-center">To the Top</p>
+				<footer class="w3-center w3-padding-64 w3-opacity w3-hover-opacity-off w3-text-white foot" style="color:#4d2600;" > 
+<a href="#body" title="To Top"><i class="fa fa-angle-double-up w3-xlarge w3-center " style="color:#4d2600;"></i>
+<p class="w3-center"style="color:#4d2600;" >To the Top</p>
 </a>   
 
  <h6 class="w3-center">Developer - Mahek Negandhi - Catch her on </h6>
-<div class="w3-xlarge w3-section w3-center">
-   <a href="mailto:negandhi.mahek@gmail.com"><i class="fa fa-envelope w3-hover-text-green"></i></a>
-   <a href="https://github.com/maheknegandhi"><i class="fa fa-github w3-hover-text-pink"></i></a>
-   <a href="https://plus.google.com/107122554510030332137/posts"><i class="fa fa-google-plus w3-hover-text-yellow"></i></a>
+<div class="w3-xlarge w3-section w3-center" style="color:#4d2600;">
+   <a href="mailto:negandhi.mahek@gmail.com"><i class="fa fa-envelope w3-hover-text-blue" style="color:#4d2600;"></i></a>
+   <a href="https://github.com/maheknegandhi"><i class="fa fa-github w3-hover-text-pink" style="color:#4d2600;"></i></a>
+   <a href="https://plus.google.com/107122554510030332137/posts"><i class="fa fa-google-plus w3-hover-text-yellow" style="color:#4d2600;"></i></a>
   </div>
 
 					</footer>
@@ -612,7 +606,7 @@
   		marker.setMap(map);
 		}
 		</script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzH0LyhxLw1RFqKRIMjU5aiPL2X7-v71s"></script>
 		<!-- Google Map API 
 		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>-->
 		<!-- Owl Carousel -->
