@@ -15,11 +15,11 @@
 /* =================================== */
 
 body {
-    background-color: #fff;
+    background-color: #fff7e6;
     font-family: 'Open Sans', sans-serif;
     line-height: 24px;
     font-size: 16px;
-    color: #818181;
+    color: #332200;
 }
 
 figure, p, address {
@@ -50,7 +50,7 @@ a, a:hover, a:focus, .btn:focus {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: 'Open Sans', sans-serif;
-    color: #252525;
+    color: #331a00;
 }
 
 main > section {
@@ -65,7 +65,7 @@ main > section {
 }
 
 .btn-blue {
-    background-color: rgba(0,158,227, 0.78);
+    background-color: rgb(255, 169, 77);
     box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
     padding: 15px 55px;
     color: #fff;
@@ -78,7 +78,7 @@ main > section {
 }
 
 .bg-blue {
-    background-color: #009EE3;
+    background-color: #ffc180;
 }
 
 /* Sweep To Right */
@@ -148,7 +148,7 @@ main > section {
 }
 
 .btn-effect:hover, .btn-effect:focus, .btn-effect:active {
-	color: #009EE3;
+	color: #ffc180;
 }
 
 .btn-effect:hover:before, .btn-effect:focus:before, .btn-effect:active:before {
@@ -179,7 +179,7 @@ main > section {
 }
 
 .sec-title h2:after {
-    border-bottom: 1px solid #009ee3;
+    border-bottom: 1px #ffce99
     content: "";
     display: block;
     left: 45%;
@@ -205,7 +205,7 @@ main > section {
 /* ==========================================*/
 
 #preloader {
-    background-color: #fff;
+    background-color: #fff3e6;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -512,12 +512,12 @@ h1.navbar-brand {
 ==================================================================*/
 
 #about {
-    background-color: #009EE3;
-    color: #fff;
+    background-color: #ffce99;
+    color: #331a00;
 }
 
 #about h3 {
-    color: #fff;
+    color: #1a0d00;
     margin: 0 0 35px;
     text-transform: uppercase;
 }
@@ -592,9 +592,9 @@ h1.navbar-brand {
 }
 
 .service-item:hover .service-icon {
-    border: 3px solid #009ee3;
+    border: 3px solid #ff8000;
     margin-bottom: 20px;
-    color: #009ee3;
+    color: #ff8000;
 }
 
 .service-icon i {
@@ -691,7 +691,7 @@ ul.external li a {
 }
 
 ul.external li a:hover {
-    background-color: #009EE3;
+    background-color: #ff8000;
     color: #fff;
 }
 
@@ -834,7 +834,7 @@ ul.external li a:hover {
 }
 
 .price-table.featured .value {
-    background-color: #009EE3;
+    background-color: #ff8000;
     color: #fff;
 }
 
@@ -883,7 +883,7 @@ ul.external li a:hover {
 
 .price-table.featured ul li:last-child,
 .price-table ul li:last-child:hover {
-    background-color: #009EE3;
+    background-color: #ff8000;
 }
 
 .price-table.featured ul li:last-child a,
@@ -938,8 +938,10 @@ ul.external li a:hover {
 }
 
 .social-button li a:hover {
-    color: #008ECC;
-    border: 2px solid #008ECC;
+    color: #994d00
+;
+    border: 2px solid #994d00
+;
 }
 
 
@@ -970,15 +972,17 @@ textarea.form-control {
 }
 
 #submit:before {
-  background-color: #0A85BB;
+  background-color: #994d00
+;
 }
 
 #submit.btn-effect:after {
-  background: #2E2E2E;
+  background: #994d00
+;
 }
 
 .contact-details h3 {
-    border-bottom: 1px solid #008ecc;
+    border-bottom: 1px solid #994d00;
     font-weight: 700;
     margin-bottom: 15px;
     padding-bottom: 15px;
@@ -1120,7 +1124,8 @@ textarea.form-control {
 }
 
 .footer-social ul li a:hover {
-    color: #009EE3;
+    color: #994d00
+;
 }
 
 .footer-content > p {
